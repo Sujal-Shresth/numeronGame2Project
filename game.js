@@ -63,6 +63,7 @@ function randomise(){
 function gameOver(){
     location.href = "gameover.html?score=" + score;
 }
+
 document.addEventListener('click', (e) => {
     if(e.target.classList.contains('Operator')){
         let operator = e.target.getAttribute('id');
