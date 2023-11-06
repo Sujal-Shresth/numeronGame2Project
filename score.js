@@ -4,9 +4,9 @@ console.log(urlParams);
 var score = urlParams.get("score");
 
 const scoreBoard = document.getElementById("score-board");
-const restart = document.getElementById("play-again-button");
+const newGame = document.getElementById("play-again-button");
 
 scoreBoard.innerHTML = score;
-restart.addEventListener('click', () => {
+newGame.addEventListener('click', () => {
   location.href = "./game.html";
 })
